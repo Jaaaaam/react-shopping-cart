@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+html, body, #root, .main-container {
+  font-family: 'Noto Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  color: $gray;
+}
+
+.top-nav {
+  display: flex;
+  padding: 10px 30px;
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.05), 0 1px 10px 0 rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.05), 0 1px 10px 0 rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.05);
+  position: absolute;
+  z-index: 2;
+  width: calc(100% - 60px);
+  background-color: white;
+  .menu {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+    .menu-item {
+      padding: 0 10px;
+      cursor: pointer;
+      letter-spacing: 1.3px;
+    }
+  }
+  .menu-right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.product-container {
+  background-color: lighten($teal-1, 45%);
+  min-width: 100%;
+  min-height: calc(100% - 80px);
+  position: absolute;
+  top: 60px;
+}
+
+.list-icon {
+  margin: 0 15px;
+
+  &:last-child {
+    margin: 0px;
+  }
+}
