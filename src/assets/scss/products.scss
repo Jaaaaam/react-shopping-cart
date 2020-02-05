@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+.product-container {
+  background-color: lighten($teal-1, 45%);
+  min-width: 100%;
+  min-height: calc(100% - 80px);
+  position: absolute;
+  top: 60px;
+}
+
+.product-list-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  .product {
+    margin: 10px;
+    .product-details {
+      background-color: #fff;
+      padding: 10px;
+      width: 180px;
+      position: relative;
+      top: -5px;
+      // color: black;
+      .product-name {
+        max-height: 20px;
+        max-width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-style: italic;
+      }
+      .product-brand {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.product-button {
+  width: 200px;
+}
