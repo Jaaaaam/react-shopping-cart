@@ -9,6 +9,15 @@
 
   .cart-table {
     width: 100%;
+
+    tr {
+      .test {
+        width: 300px;
+        overflow: hidden;
+        text-align: left;
+      }
+    }
+
   }
 
   .cart-item-list {
@@ -67,4 +76,8 @@
 .logo-filler {
   color: rgba($color: #fff, $alpha: .75);
   font-size: 150px;
+}
+
+td {
+  text-align: center;
 }
